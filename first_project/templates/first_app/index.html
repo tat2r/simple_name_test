@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index Page</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+	
+	<h1>You have reached the index page</h1></div>
+	<h2>This link <a href="http://127.0.0.1:8000/intake/">START HERE</a> will take you to a form to fill out.</h2>
+	<p>
+		{% for item in form %}
+		NAME: {{ item.name }}<br>
+		CELL: {{ item.cell_phone}}<br>
+		EMAIL: {{ item.email }}<br><br>
+		{% endfor %}
+	</p>
+	</div>
+</body>
+</html>
